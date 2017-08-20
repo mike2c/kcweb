@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kronoscode | Home</title>
+
+	<!--jQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!--jQuery-UI-->
+	<script src="https://code.jquery.com/ui/jquery-ui-git.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css"/>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+	<link rel="stylesheet" href="slick/slick-theme.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!--Site assets-->
+	<link rel="stylesheet" href="styleMENU.css">
+</head>
+<body>
+	<div class="">
+		<div class="col-md-3 col-lg-3">
+			<header class="header">
+				<div class="row">
+					<div class="col-md-7 col-lg-7">
+						<a href="http://www.kronoscode.com" class="logo"><img src="img/logo.png" ></a>	
+						<h4 class="effects"><strong>KRONOS</strong>CODE</h4>			
+					</div>
+					<div class="col-md-5 col-lg-5">
+						<div class="lang">
+							<a href="#">En</a>	
+							<a class="v-splitter" href="#">Es</a>
+						</div>
+					</div>
+				</div>
+			</header>
+			<nav>
+				<ul class="vertical-menu hidden-xs hidden-sm">
+					<li><a href="#">Services</a></li>
+					<li><a href="projects.html">Work</a></li>
+					<li><a href="team.html">Team</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+			<p id="quotes">We put a lot of work to make this look easy <br> because <span id="especial" style="border-bottom: 2px solid #24A6DF;color: white;">we love what we do</span>.</p>
+		</div>
+		<div class="col-md-9 col-lg-9">
+			<div class="slider-container">
+			<a class="slider-button" href="javascript:slideUp();">></a>
+				<ul class="slider">
+					<li>
+						<div class="project-title">
+							<p>Hotel Casa de Ángeles</p>
+							<img src="http://cnmedia.eastus2.cloudapp.azure.com/upload/media/pics/AUGUST2016/3112332Agujero-Nego.jpg" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="project-title">
+							<p>Prueba 2</p>
+							<img src="http://cnmedia.eastus2.cloudapp.azure.com/upload/media/pics/AUGUST2016/3112332Agujero-Nego.jpg" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="project-title">
+							<p>Prueba 3</p>
+							<img src="http://cnmedia.eastus2.cloudapp.azure.com/upload/media/pics/AUGUST2016/3112332Agujero-Nego.jpg" alt="">
+						</div>
+					</li>
+					<li>
+						<div class="project-title">
+							<p>Prueba 4</p>
+							<img src="http://cnmedia.eastus2.cloudapp.azure.com/upload/media/pics/AUGUST2016/3112332Agujero-Nego.jpg" alt="">
+						</div>
+					</li>
+				</ul>
+				<a class="slider-button" href="javascript:slideDown();">></a>
+			</div>		
+		</div>
+	</div>
+	<script>
+	$(".slider").slick({
+		vertical: true,
+		arrows: false,
+		autoplay: true,
+		autoplayspeed: 1000
+	});
+
+	function slideUp(){
+		$(".slider").slick("slickNext");
+	}
+
+	function slideDown(){
+		$(".slider").slick("slickPrev");
+	}
+</script>
+</body>
+</html>

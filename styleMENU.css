@@ -1,0 +1,311 @@
+@font-face{
+    font-family: "Futura";
+    src: url("slick/Futura.ttc");
+}
+
+body{
+	background-color: red;
+}
+
+p{
+	font-size: 1.0em;
+}
+
+/*.header{
+	margin-left: -200px;
+}*/
+
+.vertical-menu{
+	list-style: none;
+	padding: 10px;
+	margin-bottom: 100px;
+	margin-top: -25px;
+
+}
+
+.vertical-menu a{
+	color: #938c8c;
+	font-size: 2.1em;
+	text-decoration: none;
+	font-family: "Futura";
+
+}
+
+.vertical-menu li{
+	width: 120px;
+	height: 20px;
+	position: relative;
+	display: list-item;
+	margin: 50px 0px;
+	padding: 20px;
+
+}
+
+.vertical-menu li:hover{
+	background-color: #1B698B;
+	border-radius: 2px;
+}
+
+.vertical-menu li:hover > a{
+	color: white;
+	}
+
+.logo{
+	margin: 5px 0px;
+	display: inline-block;
+	padding-top: 10px;
+}
+
+a.logo{
+	text-decoration: none;
+	color: white;
+}
+
+.logo img{
+	margin: 10px 0 15px;
+	width: 60px;
+}
+
+h4, .effect{
+	display: none;
+}
+
+/*h4, .effect:hover{
+	*/
+}
+
+
+.hidden-legend{
+	display: none;
+}
+
+.lang{
+	text-align: right;
+	padding-right: 25px;
+	margin-top: 15px;
+}
+
+.lang a{
+	text-decoration:none;
+	color: #938c8c;
+	display: inline-block;
+	padding: 0px 5px;
+	padding    
+	margin: 15px 0px;
+}
+
+.lang a:hover{
+	color: white;
+}
+
+.v-splitter{
+	border-left: 2px solid white;
+}
+
+.slider-container{
+	padding: 40px;
+	background-image: url('img/Dots.svg');
+	background-size: 700px;
+	margin-top: -50px;
+	margin-right: -20px;
+	margin-left: -30px;
+
+}
+
+.project-title{
+	background-color: #141414;
+	padding-left: 40px;
+	position: relative;	
+
+}
+
+.project-title p{
+	-webkit-transform:rotate(-90deg);
+	margin: 0px;
+	width: 80%;
+	color: white;
+	position: relative;
+	left: -370px;
+	bottom: -300px;
+	text-align: center;
+}
+
+.slider{
+	margin-right: -180px;
+	
+}
+
+/*.slider img{
+	
+	
+}*/
+
+.slider-button{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	display: block;
+/*	//background-color: white;
+*/	color: white;
+	opacity: 0.4;
+	padding: 5px;
+}
+
+#quotes{
+	margin-top: -80px;
+	color:#7e7474;
+
+}
+
+/*-webkit-transform:rotate(-90deg);
+	left: -55px;
+	font-size: 16px;
+	border: 1px  solid white;
+	z-index: 2;
+	color: white;
+	margin-top: 200px;
+	position: absolute;*/
+
+/*body{
+	background-color: #0D0D0D;
+}
+
+.menu{
+	//border: 1px solid white;
+	padding-left: 20px;
+	list-style-type: none;
+	position: relative;
+}
+
+.menu li{
+
+	display: block;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	width: 90px;
+	padding: 0px;
+	height: 20px;
+}
+
+.menu li:hover{
+	background-color: #1B698B;
+}
+
+.menu li a{
+	display: block;
+	color: white;
+	opacity: 0.6;
+	font-size: 26px;
+	text-decoration: none;
+	z-index: 1;
+	position: fixed;
+	margin-top: 15px;
+	line-height: 5px;
+}
+
+.menu li:hover > a{
+	opacity: 1;
+}
+.slider-container{
+	height: 100%;
+	background-color: #141414;
+	position: fixed;
+	box-shadow: -1px -1px 25px black;
+}
+.slider{
+	
+	margin: 0px;
+}
+
+.slider-button{
+	font-size: 18px;
+	font-weight: bold;
+	width: 100%;
+	text-align: center;
+	display: block;
+	//background-color: white;
+	color: white;
+	opacity: 0.4;
+	padding: 5px;
+}
+
+.logo-section{
+	overflow: auto;
+//	border: 1px solid white;
+}
+
+.logo img{
+	float: left;
+	display: block;
+	text-decoration: none;
+	max-width: 50px;
+	margin: 10px 0;
+	margin-left: 10px;
+}
+
+.logo h4{
+	//border: 1px solid white;
+	margin-top: 20px;
+	float: left;
+	color: white;
+	overflow: auto;
+}
+
+.lang{
+	padding: 10px;
+	margin: 10px;
+	float: right;
+	display: flex;
+	justify-content: center;
+	
+}
+
+.lang a {
+	color: white;
+	opacity: 0.6;
+	text-decoration: none;
+}
+
+.lang a:hover{
+	opacity: 1;
+}
+
+.splitter{
+	margin-left: 10px;
+	display: block;
+	min-height: 20px;
+	margin-right: 10px;
+	border-left: 2px solid white;
+}
+
+.footer-image{
+
+	position: relative;
+	width: 100%;
+	text-align: center;
+	bottom: 60px;
+	justify-content: center;
+	z-index: 2;
+}
+
+.footer-image a{
+	opacity: 0.6;
+	right: 50px;
+	position: absolute;
+	border-radius: 30px;
+	border: 1px solid white;
+	color: white;
+	padding: 5px 20px;
+	font-size: 18px;
+	text-decoration: none;
+	box-shadow: 0px 5px 10px black;
+	text-shadow: 0px 2px 1px black;
+}
+
+.slider img{
+	position: relative;
+	z-index: 1;
+}
+
+*/
