@@ -54,10 +54,10 @@ a.logo{
 }
 
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
+    /*  [class*="col-"] {
         width: 100%;
-    }
+    }For mobile phones: */
+   
 }
 /***********************************************************************************************/
 
@@ -71,21 +71,20 @@ a.logo{
 	text-align: center;
 	font-size: 17px;
 	justify-content: center;
-	
+	left: 100px;
 }
-
-
 
 .left-nav {
 	padding-top: 20px;   
     height:auto;
-    position:absolute;
+    position:fixed;
     background: black;
     -webkit-transform-origin: left top;
     -webkit-transform:rotate(-90deg) translateX(-100%);
     font-family: "Futura";
     left: 0;
     z-index: 1;
+    
 }
 
 .left-nav ul {
@@ -98,10 +97,8 @@ a.logo{
 }
 
 .left-nav ul li:hover{
-background-color: orange;
+	background-color: orange;
 }
-
-
 
 .left-nav ul li {
 
@@ -169,49 +166,68 @@ background-color: orange;
   border: none;
 }
 
-.modal-nav-content {
-  width: 100%;
-  height: auto;
+.modal{
+	background-color: rgba(0,0,0,.75);
+	color: gray;
 }
 
-.modal-nav-body {
-  margin-top: 100px; 
-  background-color: black;
+.modal-nav-body ul{
+	padding: 0px;
+}
+
+.modal-header{
+	margin: 5% 0;
+	border: none;
+}
+
+.modal-header .close{
+	font-size: 20px;
+	color: white;
 }
 
 .modal-nav-body ul a {
+
   list-style-type: none;
-  color: white;
-  opacity: 0.6;
+  color: #5a5a5a;
   font-family: "Futura";
   margin: 0;
   padding: 0;
   width: 100%;
+
   text-decoration: none;
+  font-weight: bold;
+}
+
+.modal-nav-body ul a:hover{
+	color: #26a9e0;
+   	
 }
 
 .modal-nav-body ul li {
   list-style-type: none;
   text-align: center;
-  font-size: 230%;
-  padding: 8px;
+  font-size: 1.5em;
+  padding: 5px 0;
   text-transform: uppercase;
-
+	
 }
 
+.navbar{
+	background-color: black;
+	border: none;
+}
 /**********************************/
-
-@media {
-.col-lg-1 {
-    width: 8.33333333%;
-    float: right;
-}
 
 @media(max-width: 768px){
     .teaminfo {
-        margin-bottom: 70px;  
-       
-      }
+       // margin-bottom: 70px;  
+    }
+}
+
+@media only screen and (max-width: 360px){
+	.modal-nav-body ul{
+		margin-top: 15%;
+	}
 }
 
 .img-team{
@@ -223,29 +239,22 @@ background-color: orange;
     filter: gray;  /* For IE 6 - 9 */
     -webkit-transition: all .6s ease;
     justify-content: center;
+
 }
 
 .img-team:hover{
 	filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
 }
-.col-lg-3{
-	max-width: 300px;
-	margin-left: 40px;
-	margin-left: -10px;
+
+.teaminfo{
+	display: block;
+	margin-top: 30px;
 }
 
-#row1{
-	margin-left: 80px;
-	margin-top: 20px;
-}
-
-#row2{
-	margin-left: 80px;
-}
 .caption{
-	width: 90%;
-	height: 100px;
+	
+	height: 25%;
 	-webkit-transition: all .6s;
 	background-color: white;
 	margin-left: 0;
@@ -255,25 +264,25 @@ background-color: orange;
 	border-bottom-left-radius: 2px;
 	border-bottom-right-radius: 2px;
 	box-shadow: 0px 2px 10px darkgray;
+	padding: 10px 20px;
+	text-align: right;
+
 }
 
+/*Rol*/
 .caption p{
-	text-align: center; /* role*/
-	margin-left: 110px;
 	opacity: 0.6; 
-	margin-top: 20px;
-	font-family: "Open Sans"
-	font-size:1em;
+	font-family: "Open Sans";
+	font-size: 1vw;
 	font-weight: bold;
 }
 
-
+/*Nombre*/
 .caption h4{ 
-	text-align: center;   /*NAME*/
-	margin-left: 110px;
-	font-size: 1.6em;
+	
+	font-size: 2vw;
 	font-weight: bolder;
-	margin-bottom: 25px;
+	
 }
 
 .skills{
@@ -281,7 +290,7 @@ background-color: orange;
 	opacity: 0;
 	font-family: "Open Sans"
 	font-size:1.2em;
-	margin:20px;
+	
 }
 
 .caption:hover .skills	{
@@ -291,7 +300,7 @@ background-color: orange;
 
 
 .caption:hover{
-	height: 150px;
+	height: 130px;
 	-webkit-transition: all .5s;
 	transition: all .3s;
 	filter: grayscale(0%);
@@ -338,5 +347,7 @@ background-color: orange;
 	padding: 20px;
 }
 
-
+h1{
+	font-size: 2em;
+}
 
