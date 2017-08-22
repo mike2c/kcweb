@@ -1,0 +1,168 @@
+body{
+	background-color: #f8f8f8;
+}
+
+p, h4{
+	color: #9e9e9e;
+}
+
+p{
+	font-size: 1vw;
+}
+
+h4{
+	font-size: 3vw;
+
+}
+
+.underline{
+	color: white;
+	text-decoration: underline;
+	text-decoration-color: #24a6df;
+	font-weight: bold;
+}
+
+.content{
+	//background-color: #0d0d0d;
+	padding: 0 1%;
+}
+
+.main{
+	background-color:  white;
+}
+
+.navbar-default{
+	background-color: transparent;
+	border: none;
+	border-radius: 0px;
+	margin-bottom: 0px;
+}
+.nav li a{
+	padding: 15px 10px;
+	font-size: ;
+
+}
+.navbar-brand{
+	width: 160px;
+	margin-right: 100px;
+}
+
+.container-fluid{
+	padding: 0 5%;
+}
+
+.left-splitter{
+
+}
+
+.navbar-toggle:hover{
+	background-color: none;
+}
+
+.stack-menu{
+	list-style: none;
+	padding: 0px;
+	margin: 50px 0px;
+}
+
+.stack-menu li{
+	margin: 30px 0;
+}
+
+.stack-menu li a{
+	text-decoration: none;
+	color: #919396;
+	font-weight: bold;
+	font-size: 2vw;
+}
+
+.stack-menu li a:hover{
+	color: white;
+}
+
+.dots{
+	padding-top: 5%;
+	padding-left: 5%;
+	padding-bottom:5%;
+	background-size: 700px;
+	background-image: url('../img/dots.svg');
+	background-repeat: repeat;
+}
+
+.slider{
+	padding: 0px;
+	margin: 0px;
+}
+
+.slider-section{
+	background-color: #141414;
+	//	adding-bottom: 30px;
+}
+.slider img{
+	width: 100%;
+	height: auto;
+}
+
+.slide-title{
+	-webkit-transform-origin: left top;
+    -webkit-transform:rotate(-90deg) translateX(-100%);
+    width: 250px;
+	padding: 10px;
+	font-size: 15px;
+}
+
+.modal-menu{
+	list-style: none;
+	padding: 0px;
+	margin:10%;
+}
+
+.modal-menu li{
+	margin: 20px 0;
+}
+
+.modal-menu li a{
+	text-align: center;
+	display: block;
+	color: #9e9e9e;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 4vw;
+
+}
+
+.modal-menu li a:hover{
+	color: white;
+}
+#modal-menu{
+	background-color: rgba(13,13,13,0.8);
+}
+
+#modal-menu .modal-content{
+	background-color: transparent;
+	box-shadow: none;
+	margin: 5%;
+}
+
+#modal-menu .modal-header{
+	border: none;
+}
+
+#modal-menu .modal-header .close{
+	color: white;
+	text-shadow: none;
+	font-size: 35px;
+}
+
+@media only screen and (max-width: 768px){
+	.slide-title{
+		-webkit-transform-origin: left top;
+	    -webkit-transform:rotate(0deg) translateX(0);
+	    text-align: center;
+	}
+}
+
+/*Cambiar color para el boton de collapse*/
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+	
+}
